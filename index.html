@@ -3,110 +3,189 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Katlego Queeneth Matlhoko – Portfolio Website</title>
+    <title>Katlego Matlhoko | Full Stack Developer</title>
+    <link rel="stylesheet" href="styles.css"/>
+    <script src="script.js" defer></script>
    
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="nav-container">
-                <h1>Katlego Queeneth Matlhoko</h1>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Katlego Queeneth Matlhoko</h1>
+            <p class="subtitle">Full Stack Web Developer</p>
+            <p style="margin-bottom: 2rem;">Crafting Beautiful Digital Experiences with Code</p>
+            <div class="cta-buttons">
+                <a href="#contact" class="btn btn-primary">Get In Touch</a>
+                <a href="#projects" class="btn btn-secondary">View My Work</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-content">
+            <p>
+                I'm a creative and detail-oriented Full Stack Web Developer with over 3 years of hands-on experience 
+                in designing, developing, and deploying responsive websites and web applications.
+            </p>
+            <p>
+                Based in Bloemfontein, Free State, I'm passionate about continuous learning and leveraging technology 
+                to improve business efficiency and customer experience. I combine technical expertise with a strong 
+                eye for UX/UI design to create impactful digital solutions.
+            </p>
+            <p>
+                Currently pursuing my Bachelor of Information Technology in Business Systems while working as a 
+                Front-End Web Developer at Homegrown Bloemfontein.
+            </p>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2 class="section-title">Technical Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <h3>Frontend Development</h3>
                 <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#certifications">Certifications</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li>HTML5 & CSS3</li>
+                    <li>JavaScript</li>
+                    <li>React.js</li>
+                    <li>Bootstrap & jQuery</li>
                 </ul>
             </div>
-        </nav>
-        <section id="home" class="hero">
-            <div class="hero-content">
-                 <img src="img/Katlego.jpg"  class="profile-img" width="250">
-                <h2>Welcome to my personal developer portfolio website!</h2>
-                <p id="typing-effect">Junior Developer | Business Systems Student | Problem Solver</p>
-                <p>This website showcases my journey as a Junior Developer, Business Systems Student, and Problem Solver. It highlights my skills, projects, achievements, and ways to connect with me professionally.</p>
+            <div class="skill-card">
+                <h3>Backend Development</h3>
+                <ul>
+                    <li>Python</li>
+                    <li>Flask</li>
+                    <li>MySQL</li>
+                    <li>PostgreSQL</li>
+                </ul>
             </div>
-        </section>
-    </header>
-
-    <main>
-        <section id="about" class="section">
-            <h2>About Me</h2>
-            <p>The main goal of this portfolio is to present my technical skills in web development, programming, and data analysis. It showcases creative projects including web apps, dashboards, and software designs, along with professional achievements, certifications, and my personal brand. It serves as both an online resume and a digital introduction to who I am as a developer.</p>
-            <p>I'm currently focused on learning React.js and expanding my data visualization skills.</p>
-        </section>
-
-        <section id="skills" class="section">
-            <h2>Key Skills</h2>
-            <div class="skills-grid">
-                <div class="skill-item"><i class="fab fa-java"></i><span>Java</span></div>
-                <div class="skill-item"><i class="fab fa-python"></i><span>Python</span></div>
-                <div class="fab fa-js"></i><span>JavaScript</span></div>
-                <div class="skill-item"><i class="fab fa-html5"></i><span>HTML5</span></div>
-                <div class="skill-item"><i class="fab fa-css3-alt"></i><span>CSS3</span></div>
-                <div class="skill-item"><i class="fab fa-react"></i><span>React.js (Learning)</span></div>
-                <div class="skill-item"><i class="fas fa-database"></i><span>MySQL & SQL Server</span></div>
-                <div class="skill-item"><i class="fas fa-chart-bar"></i><span>Power BI & Excel</span></div>
-                <div class="skill-item"><i class="fab fa-figma"></i><span>Canva & Figma</span></div>
-                <div class="skill-item"><i class="fab fa-git"></i><span>Git & GitHub</span></div>
+            <div class="skill-card">
+                <h3>Tools & Design</h3>
+                <ul>
+                    <li>Git & GitHub</li>
+                    <li>VS Code</li>
+                    <li>Figma</li>
+                    <li>Canva & Power BI</li>
+                </ul>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section id="projects" class="section">
-            <h2>Projects</h2>
-            <div class="projects-grid">
-                <div class="project-item">
-                    <h3>Web App Project</h3>
-                    <p>A responsive web application built with HTML, CSS, and JS. Features interactive elements and data visualization.</p>
-                    <a href="#" class="btn">View Project</a>
+    <section id="experience">
+        <h2 class="section-title">Professional Experience</h2>
+        <div class="experience-timeline">
+            <div class="timeline-item">
+                <h3>Front-End Web Developer</h3>
+                <p class="company">Homegrown Bloemfontein | March 2023 – Present</p>
+                <ul>
+                    <li>Designed and maintained responsive websites for small business clients</li>
+                    <li>Implemented modern UI/UX features using HTML5, CSS3, and JavaScript</li>
+                    <li>Optimized websites for SEO and performance, achieving 30% faster load times</li>
+                    <li>Collaborated with back-end developers to integrate APIs and databases</li>
+                </ul>
+            </div>
+            <div class="timeline-item">
+                <h3>Web Developer Intern</h3>
+                <p class="company">Junior Academy School | March 2021 – March 2022</p>
+                <ul>
+                    <li>Assisted senior developers in creating web applications</li>
+                    <li>Built components for e-commerce and informational websites</li>
+                    <li>Participated in daily stand-ups and code reviews</li>
+                    <li>Improved user interaction and accessibility across client websites</li>
+                </ul>
+            </div>
+            <div class="timeline-item">
+                <h3>Customer Support Specialist</h3>
+                <p class="company">Amazon (Remote) | 2021 – 2024</p>
+                <ul>
+                    <li>Delivered customer support with technical precision and empathy</li>
+                    <li>Developed troubleshooting documentation improving first-call resolution rates</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2 class="section-title">Featured Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <div class="project-card-content">
+                    <h3>Portfolio Website</h3>
+                    <p>A fully responsive personal portfolio showcasing professional experience and projects with modern design elements.</p>
+                    <div style="margin-top: 1rem;">
+                        <span class="project-tag">HTML</span>
+                        <span class="project-tag">CSS</span>
+                        <span class="project-tag">JavaScript</span>
+                    </div>
                 </div>
-                <div class="project-item">
-                    <h3>Data Dashboard</h3>
-                    <p>A Power BI dashboard for business analytics, pulling data from SQL Server.</p>
-                    <a href="#" class="btn">View Project</a>
-                </div>
-                <div class="project-item">
-                    <h3>Python Script Tool</h3>
-                    <p>A Python-based tool for data analysis and automation.</p>
-                    <a href="#" class="btn">View Project</a>
+            </div>
+            <div class="project-card">
+                <div class="project-card-content">
+                    <h3>Postpartum Healing Journey</h3>
+                    <p>An empathetic, user-friendly web application supporting new mothers in their recovery journey.</p>
+                    <div style="margin-top: 1rem;">
+                        <span class="project-tag">HTML</span>
+                        <span class="project-tag">CSS</span>
+                        <span class="project-tag">JavaScript</span>
+                    </div>
                 </div>
             </div>
-        </section>
-
-        <section id="certifications" class="section">
-            <h2>Certifications & Education</h2>
-            <ul>
-                <li><i class="fas fa-graduation-cap"></i> Higher Certificate in Business Management – IIE Rosebank College</li>
-                <li><i class="fas fa-graduation-cap"></i> Bachelor of Information Technology in Business Systems – IIE Rosebank College</li>
-                <li><i class="fas fa-certificate"></i> Diploma in Social Media Management – Alison</li>
-                <li><i class="fas fa-chart-line"></i> Business Analytics with Excel – Simplilearn</li>
-                <li><i class="fas fa-chart-bar"></i> Power BI Beginner & Data Modeling – Alison</li>
-                <li><i class="fab fa-python"></i> Python Programming for Beginners – Udemy</li>
-                <li><i class="fas fa-database"></i> Introduction to SQL – Alison</li>
-                <li><i class="fas fa-certificate"></i>FNB App Academy - Full Stack Development</li>
-            </ul>
-        </section>
-
-        <section id="contact" class="section">
-            <h2>Connect With Me</h2>
-            <div class="contact-links">
-                <a href="https://github.com/LesediKganya1920" target="_blank"><i class="fab fa-github"></i> GitHub</a>
-                <a href="https://linkedin.com/in/katlego-matlhoko" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
-                <a href="mailto:lesedikganya1920@gmail.com"><i class="fas fa-envelope"></i> Email</a>
+            <div class="project-card">
+                <div class="project-card-content">
+                    <h3>IT Bootcamp Registration</h3>
+                    <p>An interactive event registration page for a local tech bootcamp with seamless user experience.</p>
+                    <div style="margin-top: 1rem;">
+                        <span class="project-tag">HTML</span>
+                        <span class="project-tag">CSS</span>
+                        <span class="project-tag">JavaScript</span>
+                    </div>
+                </div>
             </div>
-            <p>🔗 Live Demo: Coming soon<br>💾 Source Code: Available in this repository</p>
-        </section>
-    </main>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2 class="section-title">Get In Touch</h2>
+        <div class="contact-content">
+            <p style="margin-bottom: 2rem; font-size: 1.1rem;">
+                I'm currently available for new opportunities and collaborations. 
+                Let's create something amazing together!
+            </p>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <span style="font-size: 1.5rem;">📧</span>
+                    <a href="mailto:lesedikganya1920@gmail.com">lesedikganya1920@gmail.com</a>
+                </div>
+                <div class="contact-item">
+                    <span style="font-size: 1.5rem;">📱</span>
+                    <span>067 968 9273</span>
+                </div>
+                <div class="contact-item">
+                    <span style="font-size: 1.5rem;">📍</span>
+                    <span>Bloemfontein, Free State</span>
+                </div>
+            </div>
+
+    </section>
 
     <footer>
         <p>&copy; 2025 Katlego Queeneth Matlhoko. All rights reserved.</p>
+        <p style="margin-top: 0.5rem; color: var(--pink);">Built with passion and code ✨</p>
     </footer>
 
-    <script src="script.js"></script>
+    
 </body>
 </html>
